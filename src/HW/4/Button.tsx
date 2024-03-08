@@ -1,6 +1,6 @@
 type ButtonPropsType = {
-  callBack: any // НУЖНО ПРОТИПИЗИРОВАТЬ
-  name: any // НУЖНО ПРОТИПИЗИРОВАТЬ
+  onClick: () => void;
+  children: React.ReactNode;
 };
 
 export const Button = (props: ButtonPropsType) => {
@@ -10,7 +10,7 @@ export const Button = (props: ButtonPropsType) => {
 
   return (
     <button id={'hw04-button'} onClick={callBackHandler}>
-      {props.name}
+      {props.children}
     </button>
   );
 };
