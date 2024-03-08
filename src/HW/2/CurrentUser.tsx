@@ -1,7 +1,18 @@
-import { UserType } from './HW2';
+
+
+export type UserType = {
+  id: string | number;
+  name: string;
+  age: number;
+  address: {
+    street: string;
+    city: string;
+  };
+};
+
 
 type CurrentUserPropsType = {
-  user: any // пропиши типизацию
+  user: UserType;
 };
 
 export const CurrentUser = (props: CurrentUserPropsType) => {
