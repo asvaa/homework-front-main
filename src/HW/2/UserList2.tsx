@@ -11,7 +11,7 @@ type UserList2PropsType = {
 export const UserList2: React.FC<UserList2PropsType> = (props: UserList2PropsType) => {
     return (
         <div id={'hw02-users'}>
-            <h2>User List:</h2>
+            <h2>User List2:</h2>
 
             {/* Correctly call filterUsers function on button click */}
             <button id={'hw02-filter-button'} onClick={props.filterUsers}>SHOW ME FRIENDS FROM LA</button>
