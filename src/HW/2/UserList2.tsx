@@ -3,7 +3,7 @@ import {CurrentUser} from './CurrentUser';
 import {UsersObjectType} from './HW2';
 
 
-type UserList2PropsType = {
+export type UserList2PropsType = {
     users: UsersObjectType
     filterUsers: () => void
 };
